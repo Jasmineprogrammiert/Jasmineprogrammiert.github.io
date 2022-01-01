@@ -81,7 +81,7 @@ li {
 
 .hero-image {
   /* background-image: url('./BilderfürmeineWebsite/RedIncenseBurnerSummit\(3\).jpg'); */
-  background-image: url('./images/redIncenseBurnerSummit1.jpg');
+  background-image: url('./images/sunsetPeak1.jpg');
   height: 900px;
   width: 100%;
   /* overlay effect */
@@ -106,7 +106,7 @@ li {
 }
 
 .about-me {
-  background-image: url('./BilderfürmeineWebsite/Jasmine\(1\).JPG');
+  background-image: url('./images/qiPao8.jpg');
   height: 100%vh;
   width: 100%;
   background-blend-mode: multiply;
@@ -124,7 +124,7 @@ li {
 }
 
 .city-exploring {
-  background-image: url('./BilderfürmeineWebsite/HKIsland\(1\).jpg');
+  background-image: url('./images/hkIsland1.jpg');
   padding: 15vw 13vw 15vw;
   width: 100%;
   background-blend-mode: multiply;
@@ -137,7 +137,7 @@ li {
 }
 
 .hiking {
-  background-image: url('./BilderfürmeineWebsite/LantauPeak\(1\).jpeg');
+  background-image: url('./images/lantauPeak1.jpeg');
   padding: 15vw 13vw 15vw;
   width: 100%;
   background-blend-mode: multiply;
