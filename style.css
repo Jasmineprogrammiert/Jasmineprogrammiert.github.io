@@ -106,7 +106,7 @@ li {
 }
 
 .about-me {
-  background-image: url('./images/qiPao8.jpg');
+  background-image: url('/images/qiPao8.jpg');
   height: 100%vh;
   width: 100%;
   background-blend-mode: multiply;
