@@ -81,7 +81,7 @@ li {
 
 .hero-image {
   /* background-image: url('./BilderfürmeineWebsite/RedIncenseBurnerSummit\(3\).jpg'); */
-  background-image: url('images/sunsetPeak1.jpg');
+  background-image: url('./images/sunsetPeak1.jpg');
   height: 900px;
   width: 100%;
   /* overlay effect */
@@ -106,7 +106,7 @@ li {
 }
 
 .about-me {
-  background-image: url('/images/qiPao8.jpg');
+  background-image: url('./images/qiPao8.jpg');
   height: 100%vh;
   width: 100%;
   background-blend-mode: multiply;
