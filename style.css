@@ -70,9 +70,13 @@ li {
 }
 
 /* ========== Navbar ========== */
+#navbar-upperleft {
+  color:antiquewhite;
+}
 
-
-
+.nav-link {
+  color:antiquewhite !important;
+}
 /* ========== Jumbotron ========== */
 .navbar-brand {
   font-size: 1.5rem;
