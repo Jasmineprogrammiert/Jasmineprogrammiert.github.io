@@ -81,7 +81,7 @@ li {
 
 .hero-image {
   /* background-image: url('./BilderfürmeineWebsite/RedIncenseBurnerSummit\(3\).jpg'); */
-  background-image: url('./BilderfürmeineWebsite/redIncenseBurnerSummit3.jpg');
+  background-image: url('BilderfürmeineWebsite/redIncenseBurnerSummit3.jpg');
   height: 900px;
   width: 100%;
   /* overlay effect */
