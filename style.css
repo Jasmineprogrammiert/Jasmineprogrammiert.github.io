@@ -1,5 +1,4 @@
 /* ========= General ========= */
-
 html {
   /* It does not work in Safari. Need to fix with JS */
   scroll-behavior: smooth;
@@ -77,6 +76,7 @@ li {
 .nav-link {
   color:antiquewhite !important;
 }
+
 /* ========== Jumbotron ========== */
 .navbar-brand {
   font-size: 1.5rem;
@@ -84,7 +84,6 @@ li {
 }
 
 .hero-image {
-  /* background-image: url('./BilderfürmeineWebsite/RedIncenseBurnerSummit\(3\).jpg'); */
   background-image: url('./images/sunsetPeak1.jpg');
   height: 900px;
   width: 100%;
@@ -282,18 +281,18 @@ li {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 15s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 15s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: 1} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: 1} 
   to {opacity: 1}
 }
 

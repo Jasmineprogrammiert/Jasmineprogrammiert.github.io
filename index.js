@@ -22,7 +22,7 @@ for (i = 0; i < coll.length; i++) {
 
 //Slideshow at #Collection
 var slideIndex = 0;
-showSlides();
+showSlides(slideIndex);
 
 // Next/previous controls
 // function plusSlides(n) {
@@ -48,5 +48,5 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
+  setTimeout(showSlides, 8000); // Change image every 8 seconds
 }
