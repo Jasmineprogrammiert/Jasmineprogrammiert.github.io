@@ -296,11 +296,39 @@ li {
   to {opacity: 1}
 }
 
-#top {
-  color: beige;
+/* Contact */
+.contact {
+  background: black;
+}
+
+.fa {
+  padding: 2vw 5vw 2vw;
+  width: 45px;
+  font-size: 30px;
+  text-align:center;
+
+
+
+  /* display: flex;
+  height: 70px;
+
+  text-decoration: none;
+  margin: 5px 5px;
+  padding-left: 15px; */
+}
+
+.fa:hover {
+    opacity: 0.6;
+}
+
+.fa-instagram {
+  background: #9b2aaa;
+  color: white;
+  padding-left: 15px;
 }
 
 footer {
+  background: black;
   color: beige;
 }
 
