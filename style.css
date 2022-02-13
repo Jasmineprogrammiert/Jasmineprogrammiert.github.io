@@ -1,7 +1,5 @@
 /* ========= General ========= */
 html {
-  /* It does not work in Safari. Need to fix with JS */
-  scroll-behavior: smooth;
   /* disable copy/paste */
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -42,7 +40,7 @@ h3 { /* Home "Hello" */
 } 
 
 p {
-  color: beige;
+  color: rgb(2, 2, 2);
   font-family: 'Source Serif Pro', serif;
   font-size: 20px;
   text-align: justify;
@@ -50,288 +48,60 @@ p {
   margin: 0;
 }
 
-ul {
-  font-family: 'Source Serif Pro', serif;
-  color: beige;
-  font-size: 20px;
-  text-align: justify;
-  padding: 1rem 15rem 0rem;
-  margin: 0;
-}
-  
-ol {
-  list-style-type: lower-roman;
-  padding: 3vw 10vw 3vw;
-}
-
 li {
   margin-bottom: 2px;
 }
-
 /* ========== Navbar ========== */
-#navbar-upperleft {
-  color:antiquewhite;
+.navbar {
+  background-color: hsl(0, 0%, 92%);
 }
 
-.nav-link {
-  color:antiquewhite !important;
+.navbar-brand, .nav-link, .dropdown-item {
+  color:rgb(2, 2, 2)!important;
 }
 
-/* ========== Jumbotron ========== */
 .navbar-brand {
   font-size: 1.5rem;
   font-family: 'Playball', cursive;
 }
-
-.hero-image {
-  background-image: url('./images/sunsetPeak1.jpg');
-  height: 900px;
-  width: 100%;
-  /* overlay effect */
-  /* background-blend-mode: multiply; */
-  background-color: rgba(0,0,0,0.5);
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
-  position: relative;
+/* ========== About Me ========== */
+.about-me-container {
+  background-color: whitesmoke;
+  padding-top: 8vh;
 }
 
-/* Place text in the middle of the image */
-.hero-text {
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.about-me-image {
+  float: left;
+  width: 35vw;
+  height: auto;
 }
 
-.about-me {
-  background-image: url('./images/qiPao8.jpg');
-  height: 100%vh;
-  width: 100%;
-  background-blend-mode: multiply;
-  background-color: rgba(0,0,0,0.5);
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
+.about-me-container img {
+  margin-right: 3vw;
 }
 
-.about-me-p {
-  padding: 18vw 13vw 18vw;
-}
 
-.city-exploring {
-  background-image: url('./images/hkIsland1.jpg');
-  padding: 15vw 13vw 15vw;
-  width: 100%;
-  background-blend-mode: multiply;
-  background-color: rgba(0,0,0,0.5);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
-}
-
-.hiking {
-  background-image: url('./images/lantauPeak1.jpeg');
-  padding: 15vw 13vw 15vw;
-  width: 100%;
-  background-blend-mode: multiply;
-  background-color: rgba(0,0,0,0.5);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
-}
-
-.hiking-collapsible { /* Animated Collapsibles */
-  color: beige;
-  cursor: pointer;
-  padding: 15px 0px;
-  width: 500px;
-  transform: translate(38%);
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 20px;
-  font-family: 'Source Serif Pro', serif;
-  background-color: rgba(0,0,0,0.5);
-  display: flex;
-  justify-content: center;
-}
-
-.active, .hiking-collapsible:hover { /* Animated Collapsibles */
-  background-color: rgb(44, 43, 43);
-}
-
-.hiking-content { /* Animated Collapsibles */
-  max-height: 0;
-  overflow: auto;
-  transition: max-height 0.2s ease-out;
-  background-color: rgba(0,0,0,0.5);
-  font-family: 'Source Serif Pro', serif;
-  font-size: 20px;
-  color: beige;
-  width: 500px;
-  transform: translate(38%);
-  display: flex;
-  justify-content: center;
-}
-
-.hiking-paragraph {
-  color: beige;
-  font-family: 'Source Serif Pro', serif;
-  padding: 3vw 10vw 3vw;
-  padding-bottom: 15em;
-}
-
-/* .languages {
-  background-image: url('./BilderfürmeineWebsite/Languages\(1\).jpeg');
-  padding: 15vw 13vw 15vw;
-  width: 100%;
-  background-blend-mode: multiply;
-  background-color: rgba(0,0,0,0.5);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
-} */
-
-.collections {
-  background-image: url('./images/suicideCliff2.jpg');
-  padding: 15vw 13vw 15vw;
-  width: 100%;
-  background-blend-mode: multiply;
-  background-color: rgba(0,0,0,0.5);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
-}
-
-.collections h2 p {
-  color: beige;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 800px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-/* .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-} */
-
-/* Position the "next button" to the right */
-/* .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-} */
-
-/* On hover, add a black background color with a little bit see-through */
-/* .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.3);
-} */
-
-/* The Dots indicators */
-.dot {
-  /* cursor: pointer; */
-  height: 13px;
-  width: 13px;
-  margin: 0 3px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 15s;
-  animation-name: fade;
-  animation-duration: 15s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: 1} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: 1} 
-  to {opacity: 1}
-}
-
-/* Contact */
+/* ========== Contact & Footer ========== */
 .contact {
-  background: black;
+  background-color: rgb(215, 248, 255);
 }
 
-.fa {
-  padding: 2vw 5vw 2vw;
-  width: 45px;
-  font-size: 30px;
-  text-align:center;
-
-
-
-  /* display: flex;
-  height: 70px;
-
-  text-decoration: none;
-  margin: 5px 5px;
-  padding-left: 15px; */
-}
-
-.fa:hover {
-    opacity: 0.6;
-}
-
-.fa-instagram {
-  background: #9b2aaa;
-  color: white;
-  padding-left: 15px;
+.fab {
+  font-size:4.5vw;
+  color:#2867B2;
+  padding: 2.5vw 1vw 1.5vw 2vw;
+  /* IG icon customized color */
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
-  background: black;
-  color: beige;
+  padding-left: 2vw;
 }
-
+/* ========== Responsive Web ========== */
 /* If the screen size is 100px wide or less, set the ... of <XXX> to... */
 @media screen and (max-width: 800px) {
   .navbar-brand {
@@ -359,11 +129,5 @@ footer {
   p {
     font-size: 15px;
     padding: 3vh 8vw;
-  }
-
-  ul {
-    font-size: 15px;
-    padding: 1rem 3rem 0rem;
-    margin: 0;
   }
 }
