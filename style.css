@@ -43,8 +43,8 @@ p {
   color: rgb(2, 2, 2);
   font-family: 'Source Serif Pro', serif;
   font-size: 20px;
-  text-align: justify;
-  padding: 3rem 13rem 0rem;
+  /* text-align: justify; */
+  padding: 5vh 10vw 0rem;
   margin: 0;
 }
 
@@ -66,8 +66,14 @@ li {
 }
 /* ========== About Me ========== */
 .about-me-container {
+  width: 100%;
+  height: 50vh;
   background-color: whitesmoke;
-  padding-top: 8vh;
+  padding: 10vh 0 10vh; /* top-right&left-bottom */
+  /* Clear fix: prevent floating elements from overlapping */
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .about-me-image {
@@ -79,8 +85,6 @@ li {
 .about-me-container img {
   margin-right: 3vw;
 }
-
-
 /* ========== Contact & Footer ========== */
 .contact {
   background-color: rgb(215, 248, 255);
