@@ -16,29 +16,6 @@ html {
   box-sizing: border-box;
 }
 
-h1 { /* Home "Jasmine Zeng" */
-  color:honeydew;
-  font-family: 'Satisfy', 'cursive';
-  font-size: 6vw;
-  text-align: center;
-}
-
-h2 { /* Titles of Different Sections */
-  color:honeydew;
-  font-family: 'Courgette', cursive;
-  font-size: 4.5vw;
-  text-align: center;
-  clear: both;
-  padding: 3.5rem 10rem 0rem 10rem;
-}
-
-h3 { /* Home "Hello" */
-  color:ivory;
-  font-family: 'Satisfy', cursive;
-  font-size: 2.5vw;
-  text-align: center;
-} 
-
 p {
   color: rgb(2, 2, 2);
   font-family: 'Source Serif Pro', serif;
@@ -68,7 +45,7 @@ li {
 .about-me-container {
   width: 100%;
   height: 50vh;
-  background-color: whitesmoke;
+  background-color: aliceblue;
   padding: 10vh 0 10vh; /* top-right&left-bottom */
   /* Clear fix: prevent floating elements from overlapping */
   content: "";
@@ -87,7 +64,7 @@ li {
 }
 /* ========== Contact & Footer ========== */
 .contact {
-  background-color: rgb(215, 248, 255);
+  background-color: hsl(0, 0%, 92%);
 }
 
 .fab {
