@@ -21,7 +21,7 @@ p {
   font-family: 'Source Serif Pro', serif;
   font-size: 20px;
   /* text-align: justify; */
-  padding: 5vh 10vw 0rem;
+  padding: 5vh 10vw 0;
   margin: 0;
 }
 
@@ -46,21 +46,60 @@ li {
   width: 100%;
   height: 50vh;
   background-color: aliceblue;
-  padding: 10vh 0 10vh; /* top-right&left-bottom */
+  padding: 10vh 0 10vh;
   /* Clear fix: prevent floating elements from overlapping */
   content: "";
   clear: both;
   display: table;
 }
 
-.about-me-image {
-  float: left;
+.about-me-image-overlay-container {
+  position: relative;
   width: 35vw;
-  height: auto;
+  float: left;
 }
 
-.about-me-container img {
-  margin-right: 3vw;
+.about-me-image {
+  display: block;
+  width: 40vw;
+  height: auto;
+  float: left;
+  padding: 5vh 3vw 0 7vw; /* T-R-B-L */
+}
+
+.about-me-image-overlay {
+  position: absolute;
+  top: 7%;
+  bottom: 0;
+  left: 20%;
+  right: 10vw;
+  width: 86%;
+  height: 93%;
+  opacity: 0; /* The lower the value, the more transparent */
+  transition: .5s ease;
+  background-color: rgb(135,206,230);
+}
+
+.about-me-image-overlay-container:hover .about-me-image-overlay {
+  opacity: 0.85;
+}
+
+.about-me-image-overlay-text {
+  color: rgb(2, 2, 2);
+  font-family: 'Source Serif Pro', serif;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.about-me-container p {
+  margin-left: 35vw;
+  padding: 5vh 7vw 0 6vw;
 }
 /* ========== Contact & Footer ========== */
 .contact {
@@ -68,8 +107,8 @@ li {
 }
 
 .fab {
-  font-size:4.5vw;
-  color:#2867B2;
+  font-size: 4.5vw;
+  color: #2867B2;
   padding: 2.5vw 1vw 1.5vw 2vw;
   /* IG icon customized color */
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
