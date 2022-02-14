@@ -16,6 +16,20 @@ html {
   box-sizing: border-box;
 }
 
+h1 { /* Home "Jasmine Zeng" */
+  color: #f2ffef;
+  font-family: 'Satisfy', 'cursive';
+  font-size: 7.5vw;
+  text-align: center;
+}
+
+h3 { /* Different Hello */
+  color: #f2ffef;
+  font-family: 'Satisfy', 'cursive';
+  font-size: 3.5vw;
+  text-align: center;
+} 
+
 p {
   color: rgb(2, 2, 2);
   font-family: 'Source Serif Pro', serif;
@@ -40,6 +54,29 @@ li {
 .navbar-brand {
   font-size: 1.5rem;
   font-family: 'Playball', cursive;
+}
+/* ========== Jumbotron ========== */
+.hero-image {
+  background-image: url('./images/patSinLeng1.jpeg');
+  height: 900px;
+  width: 100%;
+  /* overlay effect */
+  background-color: rgba(0,0,0,0.6);
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* ========== About Me ========== */
 .about-me-container {

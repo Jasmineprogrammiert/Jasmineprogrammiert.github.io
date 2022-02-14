@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&family=Oleo+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
     <!-- Bootstrap 5.0 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Font Awesome  -->
@@ -17,8 +19,8 @@
   <body>  
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid">
-        <span class="navbar-brand h1 ms-4">DeineLieblingsJasmin</span>
-
+        <!-- Navbar upperleft -->
+        <a class="navbar-brand h1 ms-4 nav-link" aria-current="page" href="#home">DeineLieblingsJasmin</a>
         <!-- Navbar -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,15 +42,25 @@
                 </ul>
               </li>
             </div>
-            <a class="nav-link" href="#city-exploring">City Exploring</a>
-            <a class="nav-link" href="#collections">Gallary</a>
+            <!-- <a class="nav-link" href="#city-exploring">City Exploring</a>
+            <a class="nav-link" href="#collections">Gallary</a> -->
             <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
       </div>
     </nav>
 
-<!-- ---------- About Me ---------- -->
+    <!-- ---------- Home ---------- -->
+    <header id="home">
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>DeineLieblingsJasmin</h1>
+          <h3>Hiking Blog of Jasmine Zeng</h3>
+        </div>
+      </div>
+    </header>
+
+    <!-- ---------- About Me ---------- -->
     <div id="about-me" class="about-me-container">
       <div class="about-me-image-overlay-container">
         <img src="/images/sunsetPeak1.jpg" alt="Silver Glass Hike at Sunset Peak, 2021" class="about-me-image">
