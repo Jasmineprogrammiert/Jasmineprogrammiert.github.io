@@ -23,6 +23,13 @@ h1 { /* Home "Jasmine Zeng" */
   text-align: center;
 }
 
+h2 {
+  color: rgb(2, 2, 2);
+  font-family: 'Source Serif Pro', serif;
+  font-size: 3.5vw;
+  text-align: center;
+}
+
 h3 { /* Different Hello */
   color: #f2ffef;
   font-family: 'Satisfy', 'cursive';
@@ -33,14 +40,10 @@ h3 { /* Different Hello */
 p {
   color: rgb(2, 2, 2);
   font-family: 'Source Serif Pro', serif;
-  font-size: 20px;
+  font-size: 1.6vw;
   /* text-align: justify; */
   padding: 5vh 10vw 0;
   margin: 0;
-}
-
-li {
-  margin-bottom: 2px;
 }
 /* ========== Navbar ========== */
 .navbar {
@@ -54,6 +57,15 @@ li {
 .navbar-brand {
   font-size: 1.5rem;
   font-family: 'Playball', cursive;
+}
+
+.btn-group {
+  display: relative;
+  display: inline-block;
+}
+
+.btn-group:hover .dropdown-menu {
+  display: inline;
 }
 /* ========== Jumbotron ========== */
 .hero-image {
@@ -137,6 +149,87 @@ li {
 .about-me-container p {
   margin-left: 35vw;
   padding: 5vh 7vw 0 6vw;
+}
+/* ========== hkIslandHikes ========== */
+.hkIslandHikesBanner {
+  height: 30vh;
+  padding-top: 13vh;
+  margin-bottom: 3vh;
+}
+
+.hkIslandHikesBanner h1 {
+  color: rgb(2, 2, 2);
+}
+
+.articles {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  
+  @media (min-width: 30em) {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  @media (min-width: 60em) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100%; */
+  
+  /* sets up hover state */
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+    
+  /* &:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  } */
+}
+
+.thumb {
+  padding-bottom: 50vh;
+  background-size: cover;
+  background-position: center center;
+}
+  
+article {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+}
+
+.item-1 {
+  @media (min-width: 60em) {
+    grid-column: 1 / span 2;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
 }
 /* ========== Contact & Footer ========== */
 .contact {

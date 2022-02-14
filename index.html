@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&family=Oleo+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
-    <!-- Bootstrap 5.0 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Font Awesome  -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <!-- Exertanl CSS Sheet -->
-    <link rel="stylesheet" href="style.css" />
-    <title>DeineLieblingsJasmin: Hiking Blog</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&family=Oleo+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5.0 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- Exertanl CSS Sheet -->
+  <link rel="stylesheet" href="style.css" />
+  <title>DeineLieblingsJasmin: Hiking Blog</title>
+</head>
 
   <body>  
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid">
         <!-- Navbar upperleft -->
         <a class="navbar-brand h1 ms-4 nav-link" aria-current="page" href="#home">DeineLieblingsJasmin</a>
-        <!-- Navbar -->
+        <!-- -------- Navbar -------- -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Navbar Items -->    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="navbar-nav ms-auto">
-            <!-- <a class="nav-link" aria-current="page" href="#home">Home</a> -->
             <a class="nav-link" href="#about-me">About Me</a>
             <!-- Dropdown List -->
             <div class="btn-group">
-              <li class="nav-item">
                 <a class="nav-link dropdown-toggle" href="#hiking" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hiking</a>
-                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item">Hong Kong Island</a></li>
-                  <li><a class="dropdown-item">Kowloon</a></li>
-                  <li><a class="dropdown-item">New Territories</a></li>
-                  <li><a class="dropdown-item">Outlying Islands</a></li>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/hkIslandHikes/hkIslandHikes.html">Hong Kong Island</a>
+                  <a class="dropdown-item">Kowloon</a>
+                  <a class="dropdown-item">New Territories</a>
+                  <a class="dropdown-item">Outlying Islands</a>
                 </ul>
-              </li>
             </div>
             <!-- <a class="nav-link" href="#city-exploring">City Exploring</a>
             <a class="nav-link" href="#collections">Gallary</a> -->
@@ -50,7 +47,7 @@
       </div>
     </nav>
 
-    <!-- ---------- Home ---------- -->
+    <!-- -------- Home -------- -->
     <header id="home">
       <div class="hero-image">
         <div class="hero-text">
@@ -60,7 +57,7 @@
       </div>
     </header>
 
-    <!-- ---------- About Me ---------- -->
+    <!-- -------- About Me -------- -->
     <div id="about-me" class="about-me-container">
       <div class="about-me-image-overlay-container">
         <img src="/images/sunsetPeak1.jpg" alt="Silver Glass Hike at Sunset Peak, 2021" class="about-me-image">
@@ -71,10 +68,9 @@
 
       <p>Hello, my name is <b><i>Jasmine Zeng</i></b>. I am a hiker, a language enthusiast, a web developer, and a marketing undergrad originally from Zhongshan, Mainland China, currently based in Hong Kong.</p> 
       <p>While visiting Hong Kong in early 2018, I had a solo hike at the MacLehose Trail Stage 2. I was so enchanted by the natural of this city, which along with other factors led to the thought that relocating there might be a good idea.</p>
-      <p>I have become a regular hiker after moving to Hong Kong in late 2019. During my treks, I have collected many amazing photos and experiences that I would like to share. I initially posted them via Instagram, but because of its limitations, I could only share a few pictures a time with limited words, which led me to the bold idea of coding my own hiking blog. This was my motivation to web development in late 2021, and I am proud to present this website!</p>
+      <p>I have become a regular hiker after moving to Hong Kong in late 2019. During my treks, I have collected many amazing photos and experiences that I would like to share. I initially posted them via Instagram, but because of its limitations, I could only share a few pictures a time with limited words, which led me to the bold idea of coding my own hiking blog. This was my motivation to web development in late 2021, and I am proud to present this website.</p>
     </div>  
-
-    <!-- Contact -->
+    <!-- -------- Contact -------- -->
     <div id="contact" class="contact">
       <a href="https://www.instagram.com/deinelieblingsjasmin/" target="_blank"><i class="fab fa-instagram"></i></a>
       <footer><small>Copyright &copy; 2022 Jasmine Zeng. All rights reserved.</small></footer>
