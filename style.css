@@ -1,6 +1,5 @@
 /* ========= General ========= */
-html {
-  /* disable copy/paste */
+html { /* disable copy/paste */
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -9,39 +8,34 @@ html {
   user-select: none;
   height: 100%;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-h1 { /* Home "Jasmine Zeng" */
+h1 { /* Home "DeineLieblingsJasmin" */
   color: #f2ffef;
   font-family: 'Satisfy', 'cursive';
   font-size: 7.5vw;
   text-align: center;
 }
-
-h2 {
-  color: rgb(2, 2, 2);
-  font-family: 'Source Serif Pro', serif;
-  font-size: 3.5vw;
-  text-align: center;
-}
-
-h3 { /* Different Hello */
+h2 { /* Hiking Blog of Jasmine Zeng */
   color: #f2ffef;
   font-family: 'Satisfy', 'cursive';
   font-size: 3.5vw;
   text-align: center;
+}
+h3 { 
+  color: rgb(2, 2, 2);
+  font-family: 'Georgia', sans-serif;
+  font-size: 3.5vw;
+  font-weight: 500;
+  text-align: center;
 } 
-
 p {
   color: rgb(2, 2, 2);
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'Georgia', sans-serif;
   font-size: 1.6vw;
-  /* text-align: justify; */
   padding: 5vh 10vw 0;
   margin: 0;
 }
@@ -49,21 +43,20 @@ p {
 .navbar {
   background-color: hsl(0, 0%, 92%);
 }
-
 .navbar-brand, .nav-link, .dropdown-item {
   color:rgb(2, 2, 2)!important;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
 }
-
 .navbar-brand {
-  font-size: 1.5rem;
+  font-size: 2vw;
   font-family: 'Playball', cursive;
+  font-weight: 500;
 }
-
 .btn-group {
   display: relative;
   display: inline-block;
 }
-
 .btn-group:hover .dropdown-menu {
   display: inline;
 }
@@ -81,9 +74,7 @@ p {
   position: relative;
   background-attachment: fixed;
 }
-
-/* Place text in the middle of the image */
-.hero-text {
+.hero-text { /* Place text in the middle of the image */
   position: absolute;
   text-align: center;
   top: 50%;
@@ -91,48 +82,40 @@ p {
   transform: translate(-50%, -50%);
 }
 /* ========== About Me ========== */
-.about-me-container {
+.about-me {
   width: 100%;
   height: 50vh;
   padding: 10vh 0 10vh;
   /* Clear fix: prevent floating elements from overlapping */
-  content: "";
   clear: both;
   display: table;
 }
-
-.about-me-image-overlay-container {
+.about-me-overlay-container {
   position: relative;
   width: 35vw;
   float: left;
 }
-
-.about-me-image {
+.about-me-overlay-container img {
   display: block;
   width: 40vw;
   height: auto;
   float: left;
-  padding: 5vh 3vw 0 7vw; /* T-R-B-L */
+  padding: 5vh 3vw 0 7vw;
 }
-
-.about-me-image-overlay {
+.about-me-overlay {
   position: absolute;
   top: 7%;
-  bottom: 0;
   left: 20%;
-  right: 10vw;
   width: 86%;
   height: 93%;
   opacity: 0; /* The lower the value, the more transparent */
   transition: .5s ease;
   background-color: rgb(135,206,230);
 }
-
-.about-me-image-overlay-container:hover .about-me-image-overlay {
+.about-me-overlay-container:hover .about-me-overlay {
   opacity: 0.85;
 }
-
-.about-me-image-overlay-text {
+.about-me-overlay figcaption {
   color: rgb(8, 8, 8);
   font-family: 'Source Serif Pro', serif;
   font-weight: bold;
@@ -145,21 +128,19 @@ p {
   transform: translate(-50%, -50%);
   text-align: left;
 }
-
-.about-me-image-overlay-text span {
+.about-me-overlay span {
   color: rgb(40, 40, 40);
   font-family: 'Source Serif Pro', serif;
   font-size: 15px;
   text-transform: none;
   font-weight: none;
 }
-
-.about-me-container p {
+.about-me p {
   margin-left: 35vw;
   padding: 5vh 7vw 0 6vw;
 }
 /* ========== Others ========== */
-.others-container {
+.others {
   width: 100%;
   height: 52vh;
   background-color: aliceblue;
@@ -167,17 +148,15 @@ p {
   padding-top: 3vh;
 }
 /* ========== hkIslandHikes ========== */
-.hkIslandHikesBanner {
+.hkislandhikes-banner {
   height: 30vh;
   padding-top: 13.5vh;
   margin-bottom: 1vh;
 }
-
-.hkIslandHikesBanner h1 {
+.hkislandhikes-banner h1 {
   color: rgb(2, 2, 2);
   font-size: 6vw;
 }
-
 .articles {
   width: 85%;
   max-width: 1240px;
@@ -187,63 +166,56 @@ p {
   grid-template-rows: auto;
   grid-gap: 3vh;
   padding-bottom: 10vh;
-  
   @media (min-width: 30em) {
     grid-template-columns: 1fr 1fr;
   }
-
   @media (min-width: 60em) {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
 .card {
   background: white;
   text-decoration: none;
   color: #444;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0.3vw 0.5vh 0 rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  
   /* sets up hover state */
   position: relative;
   top: 0;
   transition: all .1s ease-in;
-    
   /* &:hover {
     top: -2px;
     box-shadow: 0 4px 5px rgba(0,0,0,0.2);
   } */
 }
-
 .thumb {
   padding-bottom: 38vh;
   background-size: cover;
   background-position: center center;
 }
-  
-article {
-  padding: 0.1vh;
-  flex: 1;
+.card article {
+  margin-top: 3vh;
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: space-between;
 }
-
-span {
-  font-size: 12px;
-  font-weight: bold;
-  color: #999;
+.card span {
+  color: rgb(56,56,56);
+  font-size: 1.4vw;
+  font-weight: 500;
+  letter-spacing: .05vw;
   text-transform: uppercase;
-  letter-spacing: .05em;
-  margin: 2em 0 0 0;
+  padding: 2vh 0 0 3vw;
 }
-
+.card p {
+  padding-top: 3vh;
+}
 .item-1 {
   @media (min-width: 60em) {
     grid-column: 1 / span 2;
-
     h1 {
       font-size: 24px;
     }
@@ -254,7 +226,6 @@ span {
   background-color: hsl(0, 0%, 92%);
   width: 100%;
 }
-
 .fab {
   font-size: 4.5vw;
   color: #2867B2;
@@ -266,9 +237,9 @@ span {
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 footer {
   padding-left: 2vw;
+  font-family: 'Georgia', sans-serif;
 }
 /* ========== Responsive Web ========== */
 /* If the screen size is 100px wide or less, set the ... of <XXX> to... */
@@ -276,25 +247,20 @@ footer {
   .navbar-brand {
     font-size: 15px;
   }
-  
   .hero-image {
     height: 90vh;
-  }
-  
+  } 
   h1 {
     font-size: 11vw;
   }
-
   h2 {
-    font-size: 6vw;
-    padding: 8vh 3vw 0vh;
-  }
-
-  h3 {
     font-size: 1.2rem;
     padding: 3vh 3vw;
   }
-
+  h3 {
+    font-size: 6vw;
+    padding: 8vh 3vw 0vh;
+  }
   p {
     font-size: 15px;
     padding: 3vh 8vw;

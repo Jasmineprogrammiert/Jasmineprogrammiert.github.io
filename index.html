@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&family=Oleo+Script&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
-  <!-- Bootstrap 5.0 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <!-- Font Awesome  -->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <!-- Exertanl CSS Sheet -->
-  <link rel="stylesheet" href="style.css" />
-  <title>DeineLieblingsJasmin: Hiking Blog</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"/>
+    <!-- Bootstrap 5.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Exertanl CSS Sheet -->
+    <link rel="stylesheet" href="style.css"/>
+    <title>DeineLieblingsJasmin - A Hiking Blog</title>
+  </head>
 
   <body>  
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid">
-        <!-- Navbar upperleft -->
         <a class="navbar-brand h1 ms-4 nav-link" aria-current="page" href="#home">DeineLieblingsJasmin</a>
         <!-- -------- Navbar -------- -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Navbar Items -->    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="navbar-nav ms-auto">
             <a class="nav-link" href="#about-me">About Me</a>
-            <!-- Dropdown List -->
             <div class="btn-group">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hiking</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/hkIslandHikes/hkIslandHikes.html">Hong Kong Island</a>
-                  <a class="dropdown-item">Kowloon</a>
-                  <a class="dropdown-item">New Territories</a>
-                  <a class="dropdown-item">Outlying Islands</a>
-                </ul>
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hiking</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/hkislandhikes/hkislandhikes.html">Hong Kong Island</a>
+                <a class="dropdown-item">Kowloon</a>
+                <a class="dropdown-item">New Territories</a>
+                <a class="dropdown-item">Outlying Islands</a>
+              </ul>
             </div>
             <!-- <a class="nav-link" href="#city-exploring">City Exploring</a>
             <a class="nav-link" href="#collections">Gallary</a> -->
@@ -47,32 +43,34 @@
         </div>
       </div>
     </nav>
-   <!-- -------- Home -------- --> 
+    <!-- -------- Home -------- --> 
     <header id="home">
       <div class="hero-image">
         <div class="hero-text">
           <h1>DeineLieblingsJasmin</h1>
-          <h3>Hiking Blog of Jasmine Zeng</h3>
+          <h2>Hiking Blog of Jasmine Zeng</h2>
         </div>
       </div>
     </header>
     <!-- -------- About Me -------- -->
-    <div id="about-me" class="about-me-container">
-      <div class="about-me-image-overlay-container">
-        <img src="/images/sunsetPeak1.jpg" alt="Silver Glass Hike at Sunset Peak, Lantau Island, Hong Kong, 2021. Photo by Tsz Kwan Chiang" class="about-me-image">
-        <div class="about-me-image-overlay">
-          <div class="about-me-image-overlay-text">Silver Glass Hike at Sunset Peak, 2021<br><span>Photo by Tsz Kwan Chiang</span></div>
+    <div id="about-me" class="about-me">
+      <figure class="about-me-overlay-container">
+        <img src="/images/sunsetPeak1.jpg" alt="Silver Glass Hike at Sunset Peak, Lantau Island, Hong Kong, 2021. Photo by Tsz Kwan Chiang">
+        <div class="about-me-overlay">
+          <figcaption>Silver Glass Hike at Sunset Peak, 2021<br>
+            <span>Photo by Tsz Kwan Chiang</span>
+          </figcaption>
         </div>
-      </div>
-
+      </figure>
       <p>Hello, my name is <b><i>Jasmine Zeng</i></b>. I am a hiker, a language enthusiast, a web developer, and a marketing undergrad originally from Zhongshan, Mainland China, currently based in Hong Kong.</p> 
       <p>While visiting Hong Kong in early 2018, I had a solo hike at the MacLehose Trail Stage 2. I was so enchanted by the natural of this city, which along with other factors led to the thought that relocating there might be a great idea.</p>
       <p>I have become a regular hiker after moving to Hong Kong in late 2019. During my treks, I have collected many amazing photos and experiences that I would like to share. Initially, I posted them on Instagram, but because of its limitations, I could only share a few pictures a time with limited words, which brought me to the bold idea of coding my own hiking blog. This was my motivation to web development in late 2021, and I am proud to present this website.</p>
     </div>  
     <!-- -------- Others -------- -->
-    <div id="others" class="others-container">
+    <div id="others" class="others">
       <p><i>∙ Things to Note.</i> This website is purely for personnl entertainment, and it is not intended to be used for planning hikes or similar activities. Infomation provided might not be up-to-date or accurate.</p>
       <p><i>∙ The Languages.</i> While the main language on this website is English, it is worth to note that German, French and Traditional Chinese might also serve as the language of this site for the purpose of language practice. English translation might or might not be provided.</p>
+      <!-- <p><i>∙ The Content.</i> This website is developed and owned solely by Jasmine Zeng, and almost all of the photographs on the website are taken and owned by her, unless otherwise acknowledged. All rights reserved.</p>  -->
       <p><i>∙ The Copyright.</i> This website is developed and owned solely by Jasmine Zeng, and almost all of the photographs on the website are taken and owned by her, unless otherwise acknowledged. All rights reserved.</p> 
     </div>  
     <!-- -------- Contact -------- -->
