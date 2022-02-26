@@ -63,7 +63,7 @@ p, figcaption, ul, li {
 }
 /* ========== Jumbotron ========== */
 .hero-image {
-  background-image: url('/images/patSinLeng1.jpeg');
+  background-image: url('/images/pat-sin-leng-01.jpeg');
   height: 900px;
   width: 100%;
   /* overlay effect */
