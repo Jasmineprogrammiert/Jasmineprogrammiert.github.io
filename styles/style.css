@@ -124,7 +124,8 @@ p, figcaption, ul, li {
   color: rgb(8, 8, 8);
   font-family: 'Source Serif Pro', serif;
   font-weight: bold;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 2vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -136,7 +137,8 @@ p, figcaption, ul, li {
 .about-me-overlay span {
   color: rgb(40, 40, 40);
   font-family: 'Source Serif Pro', serif;
-  font-size: 15px;
+  /* font-size: 15px; */
+  font-size: 1.5vw;
   text-transform: none;
   font-weight: none;
 }
@@ -215,7 +217,7 @@ p, figcaption, ul, li {
   @media (min-width: 60em) {
     grid-column: 1 / span 2;
     h1 {
-      font-size: 24px;
+      font-size: 1.5vw;
     }
   }
 }
@@ -284,9 +286,21 @@ footer {
 }
 /* ========== Responsive Web ========== */
 /* If the screen size is 100px wide or less, set the ... of <XXX> to... */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
+    @media only screen 
+    and (min-device-width: 414px) 
+    and (max-device-width: 736px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+  }
   .navbar-brand {
-    font-size: 15px;
+    font-size: 5vw;
+    padding-left: 0;
+  }
+  .navbar-toggler-icon {
+    font-size: 2.5vw;
+  }
+  .navbar-nav {
+    padding-left: 43%;
   }
   .hero-image {
     height: 90vh;
@@ -295,15 +309,35 @@ footer {
     font-size: 11vw;
   }
   h2 {
-    font-size: 1.2rem;
-    padding: 3vh 3vw;
+    font-size: 7vw;
+    padding-top: 2vh;
   }
   h3 {
-    font-size: 6vw;
-    padding: 8vh 3vw 0vh;
+    font-size: 8vw;
+    padding-bottom: 1.5vh;
   }
   p {
-    font-size: 15px;
-    padding: 3vh 8vw;
+    font-size: 4vw;
+  }
+  .about-me-overlay {
+    top: 18%;
+    height: 82%;
+  }
+  .about-me-overlay figcaption {
+    font-size: 3.3vw;
+  }
+  .about-me-overlay span {
+    font-size: 2.5vw;
+  }
+  .others {
+    padding-bottom: 68vh;
+  }
+  .fab {
+    font-size: 10vw;
+    padding: 2vh 0 0.5vh 10vw;
+  }
+  footer {
+    font-size: 3.5vw;
+    padding: 0.3vh 10vw 1.5vh;
   }
 }
