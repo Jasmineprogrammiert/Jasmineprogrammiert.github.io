@@ -72,10 +72,12 @@ p, figcaption, ul, li {
   /* overlay effect */
   background-color: rgba(0,0,0,0.6);
   /* Position and center the image to scale nicely on all screens */
-  background-position: center;
+
+  /* background-position: center; */
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  position: relative;
+  /* background-size: cover;
+  position: relative; */
+  
   background-attachment: fixed;
   background-size: 100vw 100vh;
 }
