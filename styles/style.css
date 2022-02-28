@@ -66,17 +66,18 @@ p, figcaption, ul, li {
 /* ========== Jumbotron ========== */
 .hero-image {
   background-image: url('/images/pat-sin-leng-01.jpeg');
-  /* height: 900px; */
-  width: 100%;
   height: 100vh;
+  width: 100%;
+  /* height: 100vh; */
   /* overlay effect */
   background-color: rgba(0,0,0,0.6);
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   position: relative;
   background-attachment: fixed;
+  background-size: 100vw 100vh;
 }
 .hero-text { /* Place text in the middle of the image */
   position: absolute;
@@ -295,44 +296,19 @@ footer {
     and (max-device-width: 736px) 
     and (-webkit-min-device-pixel-ratio: 3) { 
   }
-
-
   .nav-link, .dropdown-item {
     font-size: 4vw;
+  }
+  .navbar-toggler-icon {
+    font-size: 2vw;
   }
   .navbar-brand {
     font-size: 5vw;
     padding-left: 0;
   }
-  .navbar-toggler-icon {
-    font-size: 2vw;
-  }
-
-  /* .navbar-brand, .nav-link, .dropdown-item {
-    color:rgb(2, 2, 2)!important;
-    font-family: "Georgia", sans-serif;
-    font-size: 1.3vw;
-    font-weight: 400;
-  }
-  .navbar-brand {
-    font-size: 1.8vw;
-    font-family: 'Playball', cursive;
-    font-weight: 500;
-    padding-top: 1.3vh;
-  }
-
-  .navbar-toggler-icon {
-    font-size: 2.5vw;
-  } */
-
-
-
   .navbar-nav {
     padding-left: 43%;
   }
-  .hero-image {
-    /* height: 100vh; */
-  } 
   h1 {
     font-size: 11vw;
   }
