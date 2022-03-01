@@ -285,6 +285,7 @@ footer {
   padding-left: 6vw;
   padding-bottom: 1vh;
   font-family: 'Georgia', sans-serif;
+  font-size: 1.3vw;
 }
 /* ========== Responsive Web ========== */
 /* If the screen size is 100px wide or less, set the ... of <XXX> to... */
