@@ -28,7 +28,7 @@ h2 { /* Hiking Blog of Jasmine Zeng */
 h3 { 
   color: rgb(2, 2, 2);
   font-family: 'Georgia', sans-serif;
-  font-size: 3.5vw;
+  font-size: 3vw;
   font-weight: 500;
   text-align: center;
   padding-bottom: 2vh;
@@ -36,7 +36,7 @@ h3 {
 p, figcaption, ul, li {
   color: rgb(2, 2, 2);
   font-family: 'Georgia', sans-serif;
-  font-size: 1.6vw;
+  font-size: 1.4vw;
   margin: 0;
   text-align: justify;
 }
@@ -47,7 +47,7 @@ p, figcaption, ul, li {
 .navbar-brand, .nav-link, .dropdown-item {
   color:rgb(2, 2, 2)!important;
   font-family: "Georgia", sans-serif;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   font-weight: 400;
 }
 .navbar-brand {
@@ -66,15 +66,10 @@ p, figcaption, ul, li {
 /* ========== Jumbotron ========== */
 .hero-image {
   background-image: url('/images/pat-sin-leng-01.jpeg');
-  /* height: 100vh; */
   width: 100%;
   height: 100vh;
   /* overlay effect */
   background-color: rgba(0,0,0,0.6);
-  /* Position and center the image to scale nicely on all screens */
-  /* background-size: cover;
-  position: relative;
-  background-position: center; */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100vw 100vh;
@@ -156,14 +151,14 @@ p, figcaption, ul, li {
 .others p {
   padding: 5vh 10vw 0;
 }
-/* ========== HK Island Hikes ========== */
-.hkislandhikes-banner {
+/* ======= The Blog - Front Page ======= */
+.hikes-banner {
   height: 28vh;
-  padding-top: 13.5vh;
+  padding-top: 14.5vh;
 }
-.hkislandhikes-banner h1 {
+.hikes-banner h1 {
   color: rgb(2, 2, 2);
-  font-size: 6vw;
+  font-size: 5vw;
 }
 .articles {
   width: 75%;
@@ -209,7 +204,7 @@ p, figcaption, ul, li {
 }
 .articles span {
   color: rgb(56,56,56);
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-weight: 500;
   letter-spacing: .05vw;
   text-align: center;
@@ -224,7 +219,7 @@ p, figcaption, ul, li {
     }
   }
 }
-/* ========== The Blog - Upperpart ========== */
+/* ======= The Blog - Upperpart ======= */
 .row {
   display: flex;
   text-align: justify;
@@ -246,16 +241,19 @@ p, figcaption, ul, li {
   margin: auto;
 }
 .articles-img-container figcaption {
-  font-size: 1.48vw;
+  font-size: 1.2vw;
   text-align: center;
 }
-.articles-img-landscape, .articles-img-portrait { /* Center the images */
+.articles-img-landscape, .articles-img-portrait, .articles-img-landscape-pano { /* Center the images */
   display: block;
   height: auto;
   margin: auto;
 }
 .articles-img-landscape {
   width: 60%;
+}
+.articles-img-landscape-pano {
+  width: 95%;
 }
 .articles-img-portrait {
   width: 90%;
@@ -300,26 +298,27 @@ footer {
     font-size: 4vw;
   }
   .navbar-toggler {
-    font-size: 5vw;
+    font-size: 2.5vw;
   }
   .navbar-toggler-icon {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   .navbar-brand {
     font-family: 'Dancing Script', cursive;
     font-size: 6vw;
     padding-left: 0;
+    padding-top: 2.5vh;
   }
   .navbar-nav {
     padding-left: 43%;
   }
   /* ------- Text ------ */
   h1 {
-    font-size: 11vw;
+    font-size: 9.5vw;
   }
   h2 {
-    font-size: 7vw;
-    padding-top: 2vh;
+    font-size: 6.5vw;
+    padding-top: 1.5vh;
   }
   h3 {
     font-size: 8vw;
@@ -342,11 +341,11 @@ footer {
   .about-me-overlay span {
     font-size: 2.5vw;
   }
-  /* ========== HK Island Hikes ========== */
-  .hkislandhikes-banner {
+  /* ======= The Blogs - Front Page ======= */
+  .hikes-banner {
     padding-top: 17vh;
   }
-  .hkislandhikes-banner h1 {
+  .hikes-banner h1 {
     font-size: 8.5vw;
   }
   .articles {
@@ -387,13 +386,21 @@ footer {
   .articles p {
     padding: 0 2.5vw 0.5vh;
   }
+  .articles-img-container {
+    max-width: 80vw; /* Set a width limit to restrict the row */
+  }
   .articles-img-container figcaption {
     font-size: 3.5vw;
   }
-
+  .articles-img-landscape {
+    width: 75%;
+  }
+  .articles-img-portrait {
+    width: 90%;
+  }
   /* ------- Contact ------ */
   .others {
-    padding-bottom: 68vh;
+    padding-bottom: 88vh;
   }
   .fab {
     font-size: 10vw;
