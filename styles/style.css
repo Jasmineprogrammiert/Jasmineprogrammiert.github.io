@@ -36,7 +36,7 @@ h3 {
 p, figcaption, ul, li {
   color: rgb(2, 2, 2);
   font-family: 'Georgia', sans-serif;
-  font-size: 1.4vw;
+  font-size: 1.5vw;
   margin: 0;
   text-align: justify;
 }
@@ -144,7 +144,7 @@ p, figcaption, ul, li {
 /* ========== Others ========== */
 .others {
   width: 100%;
-  height: 49vh;
+  height: 43vh;
   background-color: aliceblue;
   padding-top: 3vh;
 }
@@ -241,7 +241,7 @@ p, figcaption, ul, li {
   margin: auto;
 }
 .articles-img-container figcaption {
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   text-align: center;
 }
 .articles-img-landscape, .articles-img-portrait, .articles-img-landscape-pano { /* Center the images */
