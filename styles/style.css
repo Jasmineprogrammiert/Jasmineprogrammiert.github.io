@@ -144,7 +144,7 @@ p, figcaption, ul, li {
 /* ========== Others ========== */
 .others {
   width: 100%;
-  height: 47vh;
+  height: 49vh;
   background-color: aliceblue;
   padding-top: 3vh;
 }
@@ -273,7 +273,7 @@ p, figcaption, ul, li {
 .fab {
   font-size: 4.5vw;
   color: #2867B2;
-  padding: 2.5vw 1vw 1.5vw 2vw;
+  padding: 2.5vh 1vw 1vh 6vw;
   /* IG icon customized color */
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   -webkit-background-clip: text;
@@ -282,7 +282,8 @@ p, figcaption, ul, li {
   -webkit-text-fill-color: transparent;
 }
 footer {
-  padding-left: 2vw;
+  padding-left: 6vw;
+  padding-bottom: 1vh;
   font-family: 'Georgia', sans-serif;
 }
 /* ========== Responsive Web ========== */
@@ -320,10 +321,6 @@ footer {
     font-size: 6.5vw;
     padding-top: 1.5vh;
   }
-  h3 {
-    font-size: 8vw;
-    padding-bottom: 1.5vh;
-  }
   p {
     font-size: 4vw;
   }
@@ -354,7 +351,7 @@ footer {
     padding-top: 0;
   }
   .card h3 {
-    font-size: 7.5vw;
+    font-size: 6vw;
   }
   .card p {
     margin: 0.5vh 0 1vh;
@@ -365,7 +362,7 @@ footer {
   }
   .articles span {
     color: rgb(56,56,56);
-    font-size: 3.5vw;
+    font-size: 3vw;
     font-weight: 500;
     letter-spacing: .05vw;
     text-align: center;
