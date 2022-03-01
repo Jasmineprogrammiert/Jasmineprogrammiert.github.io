@@ -90,7 +90,7 @@ p, figcaption, ul, li {
 .about-me {
   width: 100%;
   height: 50vh;
-  padding: 10vh 0 10vh;
+  padding: 8vh 0 11vh;
   /* Clear fix: prevent floating elements from overlapping */
   clear: both;
   display: table;
@@ -156,11 +156,10 @@ p, figcaption, ul, li {
 .others p {
   padding: 5vh 10vw 0;
 }
-/* ========== hkIslandHikes ========== */
+/* ========== HK Island Hikes ========== */
 .hkislandhikes-banner {
   height: 28vh;
   padding-top: 13.5vh;
-  /* margin-bottom: 1vh; */
 }
 .hkislandhikes-banner h1 {
   color: rgb(2, 2, 2);
@@ -296,6 +295,7 @@ footer {
     and (max-device-width: 736px) 
     and (-webkit-min-device-pixel-ratio: 3) { 
   }
+  /* ------- Navbar ------ */
   .nav-link, .dropdown-item {
     font-size: 4vw;
   }
@@ -313,6 +313,7 @@ footer {
   .navbar-nav {
     padding-left: 43%;
   }
+  /* ------- Text ------ */
   h1 {
     font-size: 11vw;
   }
@@ -327,6 +328,10 @@ footer {
   p {
     font-size: 4vw;
   }
+  /* ------- About Me ------ */
+  .about-me {
+    padding: 5vh 0 9vh;
+  }
   .about-me-overlay {
     top: 18%;
     height: 82%;
@@ -337,6 +342,56 @@ footer {
   .about-me-overlay span {
     font-size: 2.5vw;
   }
+  /* ========== HK Island Hikes ========== */
+  .hkislandhikes-banner {
+    padding-top: 17vh;
+  }
+  .hkislandhikes-banner h1 {
+    font-size: 8.5vw;
+  }
+  .articles {
+    width: 80%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .card h3 {
+    font-size: 7.5vw;
+  }
+  .card p {
+    margin: 0.5vh 0 1vh;
+    text-align: center;
+  }
+  .thumb { /* thumb cover pic */
+    padding-bottom: 20vh;
+  }
+  .articles span {
+    color: rgb(56,56,56);
+    font-size: 3.5vw;
+    font-weight: 500;
+    letter-spacing: .05vw;
+    text-align: center;
+    text-transform: uppercase;
+    /* padding-bottom: 0.5vh; */
+  }
+  /* ========== The Blog - Upperpart ========== */
+  .column {
+    flex: 50%;
+    padding: 0 0 3vh 3.5vw;
+    border-bottom: solid #444 0;
+    font-size: 5vw;
+  }
+  .column li {
+    font-size: 3.8vw;
+  }
+  /* ========== The Blog - Body ========== */
+  .articles p {
+    padding: 0 2.5vw 0.5vh;
+  }
+  .articles-img-container figcaption {
+    font-size: 3.5vw;
+  }
+
+  /* ------- Contact ------ */
   .others {
     padding-bottom: 68vh;
   }
