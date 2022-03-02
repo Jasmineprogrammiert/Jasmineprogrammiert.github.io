@@ -144,9 +144,8 @@ p, figcaption, ul, li {
 /* ========== Others ========== */
 .others {
   width: 100%;
-  height: 48vh;
   background-color: aliceblue;
-  padding-top: 3vh;
+  padding: 3vh 0 8vh;
 }
 .others p {
   padding: 5vh 10vw 0;
@@ -169,7 +168,7 @@ p, figcaption, ul, li {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 3vh;
-  padding-bottom: 10vh;
+  padding-bottom: 11vh;
   @media (min-width: 30em) {
     grid-template-columns: 1fr 1fr;
   }
@@ -232,7 +231,7 @@ p, figcaption, ul, li {
 .column li {
   list-style: square inside;
 }
-/* ========== The Blog - Body ========== */
+/* ======== The Blog - Body ======== */
 .articles p {
   padding: 0 2.5vw 0.5vh;
 }
@@ -265,7 +264,7 @@ p, figcaption, ul, li {
 .articles-img-column { /* For portraits */
   flex: 50%;
 }
-/* ========== Contact & Footer ========== */
+/* ======== Contact & Footer ======== */
 .contact {
   background-color: hsl(0, 0%, 92%);
   width: 100%;
@@ -287,7 +286,7 @@ footer {
   font-family: 'Georgia', sans-serif;
   font-size: 1.3vw;
 }
-/* ========== Responsive Web ========== */
+/* ======== Responsive Web ======== */
 /* If the screen size is 100px wide or less, set the ... of <XXX> to... */
 @media screen and (max-width: 750px) {
     @media only screen 
@@ -295,7 +294,7 @@ footer {
     and (max-device-width: 736px) 
     and (-webkit-min-device-pixel-ratio: 3) { 
   }
-  /* ------- Navbar ------ */
+  /* ===== Navbar ===== */
   .nav-link, .dropdown-item {
     font-size: 4vw;
   }
@@ -314,7 +313,7 @@ footer {
   .navbar-nav {
     padding-left: 43%;
   }
-  /* ------- Text ------ */
+  /* ===== Text ===== */
   h1 {
     font-size: 9.5vw;
   }
@@ -325,7 +324,7 @@ footer {
   p {
     font-size: 4vw;
   }
-  /* ------- About Me ------ */
+  /* ===== About Me ===== */
   .about-me {
     padding: 5vh 0 9vh;
   }
@@ -339,6 +338,10 @@ footer {
   .about-me-overlay span {
     font-size: 2.5vw;
   }
+  /* ========== Others ========== */
+  .others {
+    height: 71vh;
+  }
   /* ======= The Blogs - Front Page ======= */
   .hikes-banner {
     padding-top: 17vh;
@@ -350,6 +353,7 @@ footer {
     width: 80%;
     margin-top: 0;
     padding-top: 0;
+    padding-bottom: 5vh;
   }
   .card h3 {
     font-size: 6vw;
@@ -396,9 +400,9 @@ footer {
   .articles-img-portrait {
     width: 90%;
   }
-  /* ------- Contact ------ */
-  .others {
-    padding-bottom: 88vh;
+  /* ===== Contact ===== */
+  .contact {
+    margin-top: 9vh;
   }
   .fab {
     font-size: 10vw;
